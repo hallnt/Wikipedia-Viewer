@@ -2,8 +2,12 @@
 
 }
 
-footer {
-  bottom: 0;
-  position: absolute;
-  width: 100%;  
+ul li {
+  background-color: #bdf;  
+  border-radius: 20px;
+  list-style: none;
+  margin: 10px auto;
+  padding: 20px;
+  width: 70%;
 }
+
