@@ -1,8 +1,11 @@
 ﻿$(document).ready(function() {
+    $("img").hover(function() {
+      $(this).addClass("animated pulse")
+      }, function() {
+        $(this).removeClass()
+    });    
 
-    /*******************************************************
-        Search button click function to search for a term
-     *******************************************************/
+    /*** Search button click function to search for a term ***/
     $("#search").click(function () {
         // clear results section
         $("#searchResults").html("");  
@@ -19,11 +22,13 @@
             dataType: "json",
             url: wikiApiUrl,
             async: false,
-            success: function (data) {              
-                for (var i=0; i<data[1].length; i++) {
-                    $("#searchResults").append("<li><strong><em>" + data[1][i] + "</em></strong></br>" + data[2][i] + "</br>" + data[3][i] + "</a></li>");
-                }                
-            },
+            success: function (data) { 
+                // iterate through data array
+                for (var i=0; i<data[1].length; i++) { 
+                    // append each search result as a list item to the html ul
+                    $("#searchResults").append("<li><em><a href=" + data[3][i] + ">" + data[1][i] + "</a></em></br>" + data[2][i] + "</li>");
+                    $("a").attr("target", "_blank");  // open links in a new window   
+                }            },
             error: function (err) {
                 alert("error");
             }

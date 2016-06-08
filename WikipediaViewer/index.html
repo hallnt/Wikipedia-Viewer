@@ -3,12 +3,13 @@
 <!--
     Author: Teleisha Hall
     App: Wikipedia viewer created using HTML, CSS / Bootstrap, JavaScript, JQuery and a Wikipedia API
-    Date: June 5, 2016
-    Version: 1
+    Date: June 7, 2016
+    Final Version
 -->
 <head>
     <title>Wikipedia Viewer</title>
     <!-- CSS/Bootstrap -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Peralta' rel='stylesheet' type='text/css'>
     
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -20,22 +21,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center">Wikipedia Viewer</h1>
-        <div class="text-center">
-            <p>Click image below for a random Wikipedia entry</p>
-            <a href="https://en.wikipedia.org/wiki/Special:Random" target="blank">
-                <img src="https://image.freepik.com/free-icon/wikipedia-logo_318-65113.jpg" />
-            </a>
-        </div>
-        <div class="text-center">
-            <input class="form" id="searchTerm" placeholder="Search">
-            <button class="btn btn-primary" id="search">Search</button>
-        </div>
-        <ul id="searchResults"></ul>
-    </div>
+    <div class="container text-center">
+        <h1>Wikipedia Viewer</h1>
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+            <img src="http://www.seoandsemservices.com/images/wikipedia.png" width="200px" ; />
+        </a>
+        <input class="form-control" id="searchTerm" placeholder="Search">
+        <i class="glyphicon glyphicon-search" id="search" style="font-size:30px"></i>
+    </div><!--/.container-->
 
-    <footer class="text-center">&copy 2016 - <a href="http://codepen.io/hallnt/full/jWGXRj" target="_blank">Teleisha Hall</a>.</footer>
+    <ul id="searchResults"></ul>
+
+    <footer class="text-center">
+        &copy 2016 - <a href="http://codepen.io/hallnt/full/jWGXRj" target="_blank">Teleisha Hall</a>.
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

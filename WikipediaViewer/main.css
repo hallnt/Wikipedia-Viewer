@@ -1,13 +1,30 @@
-﻿body {
-
+﻿body {  
+  font-family: 'Peralta', cursive;
+  font-size: 15px;
 }
 
-ul li {
-  background-color: #bdf;  
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+}
+#searchTerm {
+  width: 50%;
+  margin: 60px auto 5px auto;
+}
+img {
   border-radius: 20px;
+}
+ul li {  
+  background-color: #fff; 
+  box-shadow: -2px 3px 10px #555;
+  border-radius: 3px;
   list-style: none;
-  margin: 10px auto;
-  padding: 20px;
+  margin: 5px auto;
+  padding: 15px;
   width: 70%;
 }
 
+footer {
+  font-size: 14px;
+  margin-top: 40px;
+} 
